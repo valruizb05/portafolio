@@ -3,3 +3,21 @@
     justify-content: start;
     align-items: center;
 }
+
+.navbar {
+    background: linear-gradient(90deg, rgba(0, 180, 219, 0.8), rgba(0, 131, 176, 0.8));
+}
+.nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #f0e68c !important;
+}
+.navbar-brand {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+.navbar-brand:hover {
+    color: #f0e68c !important;
+}
