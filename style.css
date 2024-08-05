@@ -1,23 +1,59 @@
+/*  */
+
 #presentacion {
+    height: 88vh;
     display: flex;
     justify-content: start;
     align-items: center;
+
+    /*es lo mismo que 
+    <section id="presentacion" class="container col-xxl-8 px-4 py-5 d-flex justify-content-start align-items-center">
+
+    */
+
+    background-image: url("assets/fon2.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
 }
 
-.navbar {
-    background: linear-gradient(90deg, rgba(0, 180, 219, 0.8), rgba(0, 131, 176, 0.8));
+.proyecto {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
-.nav-link {
-    color: #ffffff !important;
-    transition: color 0.3s ease;
+
+#proyecto-1 {
+    background-image: url('assets/p-google.png');
 }
-.nav-link:hover {
-    color: #f0e68c !important;
+
+#proyecto-2 {
+    background-image: url('assets/p-google.png');
 }
-.navbar-brand {
-    color: #ffffff !important;
-    transition: color 0.3s ease;
+
+/*  
+
+En lugar de que se repita este codigo muchas veces es mucho mejor que se pongan las propiedades que se repiten en una clase y queda mucho mas corto 
+
+#proyecto-1 {
+    background-image: url('p-google.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
-.navbar-brand:hover {
-    color: #f0e68c !important;
+*/
+.text-shadow-1 {
+    text-shadow: 1px -1px 8px rgba(0, 0, 0, 1);
+}
+
+/* crear un boton de da click en la imagen 
+copié el que tenía en el apartado de presentación
+nada más con que pongas el botón dentro del link
+*/
+.sarina-regular {
+    font-family: "Sarina", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
