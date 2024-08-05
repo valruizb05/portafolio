@@ -1,22 +1,66 @@
-/*  */
 
 #presentacion {
     height: 88vh;
     display: flex;
     justify-content: start;
     align-items: center;
-
-    /*es lo mismo que 
-    <section id="presentacion" class="container col-xxl-8 px-4 py-5 d-flex justify-content-start align-items-center">
-
-    */
-
-    background-image: url("assets/fon2.avif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-top: 80px;
+}
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#D3A4A4;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold; 
+}
 
+.navbar-brand{
+    color: aliceblue;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+} 
+
+.navbar .nav-link {
+    color: #ffffff !important; /* Fuerza el color blanco */
+    text-decoration:solid;
+}
+
+.navbar .nav-link:hover {
+    text-shadow: 5px 5px 5px #ac268a; /* Sombra rosa claro sólida */
+}
+
+.navbar .nav-link {
+    position: relative; /* Necesario para el posicionamiento absoluto del pseudo-elemento */
+    padding: 5px 10px; /* Espacio adicional para el borde */
+    text-decoration: none;
+    color: #ffffff; /* Color de texto inicial */
+    transition: color 0.3s; /* Suaviza la transición del color */
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #FFB6C1; /* Color rosa claro */
+    border-radius: 30%; /* Hace que sea un círculo */
+    transform: translate(-50%, -50%) scale(0); /* Inicialmente oculto */
+    z-index: -1; /* Detrás del texto */
+    transition: transform 0.3s; /* Suaviza la transición del tamaño */
+}
+
+.navbar .nav-link:hover::after {
+    transform: translate(-50%, -50%) scale(1); /* Muestra el círculo al pasar el ratón */
 }
 
 .proyecto {
@@ -33,27 +77,41 @@
     background-image: url('assets/p-google.png');
 }
 
-/*  
 
-En lugar de que se repita este codigo muchas veces es mucho mejor que se pongan las propiedades que se repiten en una clase y queda mucho mas corto 
-
-#proyecto-1 {
-    background-image: url('p-google.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-*/
 .text-shadow-1 {
     text-shadow: 1px -1px 8px rgba(0, 0, 0, 1);
 }
 
-/* crear un boton de da click en la imagen 
-copié el que tenía en el apartado de presentación
-nada más con que pongas el botón dentro del link
-*/
+
 .sarina-regular {
     font-family: "Sarina", cursive;
     font-weight: 400;
     font-style: normal;
 }
+
+/* Añadir espaciado entre la imagen y el texto */
+.col-lg-6 {
+    padding: 0 50px;
+}
+
+/* Espacio alrededor del contenedor para evitar que el contenido toque los bordes */
+.container-fluid {
+    padding-left: 20px; /* Espacio izquierdo */
+    padding-right: 30px; /* Espacio derecho */
+}
+
+/* Opcional: Añadir espaciado específico entre la imagen y el texto */
+.col-lg-6 img {
+    margin-right: 20vh; /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.perfil{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 8px
+}
+
+.contactame{
+    background-color: #FFB6C1;
+}
+
