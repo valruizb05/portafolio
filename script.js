@@ -16,10 +16,10 @@ let typewriter = new Typewriter(app, {
 
 typewriter
     .pauseFor(2500) //milisegundos 2.5 segundos
-    .typeString('Karla Yaneth Cruz Sandoval')
+    .typeString('Valeria Ruiz')
     .pauseFor(300)
     .deleteAll()
-    .typeString('Desarrolladora FRONTEND JR ')
+    .typeString('Desarrolladora FRONT-END JR ')
     .pauseFor(1000)
     .start();
 
@@ -28,7 +28,7 @@ let frase = document.getElementById('frase');
 
 let typewriterFrase = new Typewriter(frase, {
     loop: true,
-    delay: 75,
+    delay: 95,
 });
 
 // aqui permite que la etiqueta sea manipulada
