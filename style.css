@@ -115,3 +115,28 @@
     background-color: #FFB6C1;
 }
 
+.custom-btn-1 {
+    background-color: #ff69b4; /* Color rosa brillante */
+    border-color: #ff69b4;
+    color: white;
+}
+
+.custom-btn-2 {
+    background-color: #ffb6c1; /* Color rosa claro */
+    border-color: #ffb6c1;
+    color: white;
+}
+
+.custom-btn-1:hover,
+.custom-btn-2:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .custom-btn-1,
+    .custom-btn-2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+

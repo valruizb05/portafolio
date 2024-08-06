@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+
+.top-right-links a {
+    margin-right: 15px;
+    color: #5f6368;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu-icon img,
+.profile-icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 272px;
+    height: 92px;
+}
+
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-input {
+    width: 580px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+.search-input:focus {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.45);
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.search-button {
+    background-color: #f8f9fa;
+    border: 1px solid #dfe1e5;
+    color: #5f6368;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-button:hover {
+    background-color: #f1f3f4;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.search-button:focus {
+    outline: none;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+}
+
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e4e4e4;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-left a,
+.footer-right a {
+    color: #5f6368;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.footer-right a {
+    margin-left: 15px;
+}
