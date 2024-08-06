@@ -76,12 +76,20 @@
 }
 
 #proyecto-2 {
-    background-image: url('assets/p-google.png');
+    background-image: url('interes/interes.png');
+}
+
+#proyecto-3 {
+    background-image: url('cenidet.png');
 }
 
 
 .text-shadow-1 {
     text-shadow: 1px -1px 8px rgba(0, 0, 0, 1);
+}
+
+.inf{
+margin-top: 10vh;
 }
 
 
@@ -144,8 +152,8 @@
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     perspective: 1000px;
     margin: auto;
 }
@@ -170,14 +178,8 @@
     backface-visibility: hidden;
 }
 
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-
 .flip-card-back {
-    background-color: #2980b9;
-    color: white;
+    color: rgb(161, 74, 132);
     transform: rotateY(180deg);
     display: flex;
     justify-content: center;
@@ -194,8 +196,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     opacity: 0;
     transition: opacity 0.6s;

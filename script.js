@@ -38,7 +38,7 @@ let typewriterFrase = new Typewriter(frase, {
 
 typewriterFrase
     .pauseFor(2500) //milisegundos 2.5 segundos
-    .typeString('"Hay algunas flores que solo ves cuando tomas desvíos."')
+    .typeString('"Tú defines tu propio éxito."')
     .pauseFor(400)
     .deleteAll()
     .typeString('Tanaka Seako ')
