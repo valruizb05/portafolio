@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // MAIN TYPEWRITER
   const mainEl = document.getElementById('typewriter-main');
   mainEl.innerHTML = '';
 
@@ -10,32 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   twMain
-    .pauseFor(2500)
+    .pauseFor(500)
+    // Mostramos nombre y rol juntos
     .typeString('Valeria Ruiz')
-    .pauseFor(300)
+    .pauseFor(2000)
     .deleteAll()
-    .typeHTML('<span class="text-success">Desarrolladora JR</span>')
-    .pauseFor(1000)
-    .deleteAll()
-    .start();
-
-  // SUBTYPEWRITER
-  const subEl = document.getElementById('typewriter-sub');
-  subEl.innerHTML = '';
-
-  const twSub = new Typewriter(subEl, {
-    loop: true,
-    delay: 95,
-    deleteSpeed: 40
-  });
-
-  twSub
-    .pauseFor(2500)
-    .typeString('Tú defines tu propio éxito.')
-    .pauseFor(400)
-    .deleteAll()
-    .typeString('¡Hazlo realidad!')
-    .pauseFor(1000)
+    // Podrías encadenar otros mensajes si quieres, por ejemplo:
+    .typeString('Desarrollladora JR')
+    .pauseFor(2000)
     .deleteAll()
     .start();
 });

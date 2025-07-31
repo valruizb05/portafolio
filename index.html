@@ -24,7 +24,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold fs-5" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -37,47 +38,41 @@
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- Hero ajustado -->
   <section class="hero bg-dark text-white">
     <div class="container py-5">
       <div class="row align-items-center">
+        <!-- Texto con typewriter personalizado -->
         <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-          <p class="small text-secondary mb-2">Holaaa!</p>
-          <h1 class="display-4 fw-bold mb-2"><span id="typewriter-main"></span></h1>
-          <h2 class="h4 fw-normal mb-4"><span id="typewriter-sub"></span></h2>
-          <p class="lead mb-4">Me gusta desarrollar.</p>
-          <a href="#contacto" class="btn btn-success btn-lg mb-4">Contáctame</a>
-          <div class="d-flex flex-column flex-md-row gap-4 small text-secondary">
-            <div><i class="bi bi-envelope-fill me-2"></i>ing.valeriaruiz5@gmail.com</div>
-            <div><i class="bi bi-telephone-fill me-2"></i>+52 7772604121</div>
-            <div><i class="bi bi-geo-alt-fill me-2"></i>México</div>
-          </div>
+          <h6 class="text-success">Quién soy?</h6>
+          <h1 class="display-4 fw-bold mb-3">
+            <span id="typewriter-main"></span>
+            </h1>
+            <!-- quita el H2 estático -->
+            <!-- <h2 class="fw-bold mb-3">Valeria Ruiz, Desarrolladora JR</h2> -->
+
+            <!-- Botones Contáctame y CV -->
+            <a href="mailto:ing.valeriaruiz5@gmail.com" class="btn btn-success btn-lg mb-4 me-2">Contáctame</a>
+            <a href="CV_ValeriaBRuizB.pdf" class="btn btn-success btn-lg mb-4 me-2" target="_blank">CV</a>
+            <!-- Contacto e íconos -->
+            <ul class="list-unstyled text-secondary mb-4 mt-3">
+              <li><i class="bi bi-envelope-fill me-2"></i>ing.valeriaruiz5@gmail.com</li>
+              <li><i class="bi bi-telephone-fill me-2"></i>+52 7772604121</li>
+              <li><i class="bi bi-geo-alt-fill me-2"></i>México</li>
+              <li><i class="bi bi-github me-2"></i><a href="https://github.com/valruizb05" target="_blank"
+                  rel="noopener" class="text-secondary">github.com/valruizb05</a></li>
+              <li><i class="bi bi-linkedin me-2"></i><a href="https://www.linkedin.com/in/valruizb/" target="_blank"
+                  rel="noopener" class="text-secondary">linkedin.com/in/valruizb</a></li>
+            </ul>
         </div>
+        <!-- Imagen más pequeña -->
         <div class="col-lg-6 text-center">
-          <img src="perfil.jpeg" alt="Perfil" class="img-fluid rounded-3 shadow-lg">
+          <img src="perfil.jpeg" alt="Perfil" class="img-fluid rounded-3 shadow-lg w-75" style="max-width:300px;">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="container py-5 text-white">
-    <div class="row align-items-center g-5">
-      <div class="col-md-6 text-center text-md-start">
-        <h6 class="text-success">Quién soy?</h6>
-        <h2 class="fw-bold mb-3">Valeria Ruiz, Desarrolladora JR</h2>
-        <p class="text-secondary mb-4">Apasionada por automatizar y desarrollar soluciones a ideas.</p>
-        <ul class="list-unstyled text-secondary mb-4">
-          <li><strong>GitHub:</strong> https://github.com/valruizb05</li>
-          <li><strong>Linkedln:</strong> https://www.linkedin.com/in/valruizb/</li>
-          <li><strong>CV:</strong> </li>
-        </ul>
-      </div>
-      <div class="col-md-6 text-center">
-        <img src="VALE2.jpg" alt="Valeria Ruiz" class="img-fluid rounded-3 shadow-lg">
-      </div>
-    </div>
-  </section>
 
   <!-- Skills & Technologies -->
   <section id="skillsTech" class="container py-5 text-white">
@@ -112,11 +107,13 @@
               <h5>Adaptabilidad</h5>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHabilidades" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHabilidades"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselHabilidades" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselHabilidades"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Siguiente</span>
           </button>
@@ -152,11 +149,13 @@
               <h5>SQL</h5>
             </div>
           </div>
-          <button class="carousel-control-prev contacto" type="button" data-bs-target="#carouselTecnologias" data-bs-slide="prev">
+          <button class="carousel-control-prev contacto" type="button" data-bs-target="#carouselTecnologias"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon contacto" aria-hidden="true"></span>
             <span class="visually-hidden contacto">Anterior</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselTecnologias" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTecnologias"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Siguiente</span>
           </button>
@@ -175,4 +174,5 @@
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

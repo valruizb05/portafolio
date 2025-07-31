@@ -20,6 +20,10 @@ img.rounded-3.shadow-lg {
   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 
+.text-success {
+  color: var(--bs-success) !important;
+}
+
 :root {
   /* Barbie pink en vez de verde */
   --bs-success:       #d0009c;
