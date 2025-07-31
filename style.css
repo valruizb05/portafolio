@@ -1,21 +1,13 @@
 :root {
-  /* el verde del ejemplo */
-  --bs--pink: #d0009c;
+  /* Cambia el verde por tu rosa Barbie */
+  --bs-success:  #d0009c;        /* el hex de tu rosa */
+  --bs-success-rgb: 208,0,156;   /* la versión RGB */
 }
 
 body {
   background-color: #0d0d0d;
 }
 
-/* Ajustes generales de sección */
-.hero {
-  padding-top: 6rem; /* si necesitas compensar un navbar oculto */
-  padding-bottom: 6rem;
-}
-.hero .btn-success {
-  padding: 0.75rem 1.75rem;
-  font-weight: 500;
-}
 .bg-dark {
   background-color: #111 !important;
 }
@@ -28,7 +20,47 @@ img.rounded-3.shadow-lg {
   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 
-/* Tipografía */
+:root {
+  /* Barbie pink en vez de verde */
+  --bs-success:       #d0009c;
+  --bs-success-rgb:   208,0,156;
+}
+
+/* Evita que el fixed-top tape tu contenido */
+body {
+  padding-top: 56px;       /* altura navbar fija de Bootstrap */
+  background-color: #0d0d0d;
+}
+
+/* Hero tal cual lo tenías */
+.hero {
+  padding-top: 3rem;       /* puedes ajustar si quieres más o menos */
+  padding-bottom: 3rem;
+}
+
+/* Tus sombras, tipografía, etc. */
+img.rounded-3.shadow-lg {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
 h1, h2 {
   line-height: 1.2;
 }
+
+.card .text-secondary {
+  opacity: 0.8;
+}
+
+
+.btn-success {
+  background-color: #d0009c !important;
+  border-color:     #d0009c !important;
+}
+.btn-success:hover {
+  background-color: #b0007b !important;
+  border-color:     #b0007b !important;
+}
+
+  .contacto {
+      color: #fff !important;
+    }
