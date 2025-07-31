@@ -1,50 +1,43 @@
-//alert("Hola Mundo <3");
+document.addEventListener('DOMContentLoaded', () => {
+  // ——— HEADER TYPEWRITER ———
+  const mainEl = document.getElementById('typewriter-main');
+  mainEl.innerHTML = '';  // limpiamos por si acaso
 
-// se ocupa let porque var hace que las variables vivan en otros archivos
-
-let app = document.getElementById('app');
-
-let typewriter = new Typewriter(app, {
+  const twMain = new Typewriter(mainEl, {
     loop: true,
-    delay: 75,
-});
+    delay: 95,
+    deleteSpeed: 50
+  });
 
-// aqui permite que la etiqueta sea manipulada
-//reconoces una accion tiene paréntesis después del nombre de la accion
-// a veces tiene el operador punto
-//typewriter
-
-typewriter
-    .pauseFor(2500) //milisegundos 2.5 segundos
+  twMain
+    .pauseFor(2500)
     .typeString('Valeria Ruiz')
     .pauseFor(300)
     .deleteAll()
-    .typeString('Desarrolladora FRONT-END JR ')
+    // usa typeHTML para que el <span> venga ya coloreado
+    .typeHTML('<span class="text-success">Desarrolladora JR</span>')
     .pauseFor(1000)
+    .deleteAll()
     .start();
 
 
-let frase = document.getElementById('frase');
+  // ——— SUBTITLE / FRASE TYPEWRITER ———
+  const subEl = document.getElementById('typewriter-sub');
+  subEl.innerHTML = '';
 
-let typewriterFrase = new Typewriter(frase, {
+  const twSub = new Typewriter(subEl, {
     loop: true,
     delay: 95,
-});
+    deleteSpeed: 40
+  });
 
-// aqui permite que la etiqueta sea manipulada
-//reconoces una accion tiene paréntesis después del nombre de la accion
-// a veces tiene el operador punto
-//typewriter
-
-typewriterFrase
-    .pauseFor(2500) //milisegundos 2.5 segundos
-    .typeString('"Tú defines tu propio éxito."')
+  twSub
+    .pauseFor(2500)
+    .typeString('Tú defines tu propio éxito.')
     .pauseFor(400)
     .deleteAll()
-    .typeString('Tanaka Seako ')
+    .typeString('¡Hazlo realidad!')
     .pauseFor(1000)
+    .deleteAll()
     .start();
-
-
-
-
+});

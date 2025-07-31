@@ -1,208 +1,34 @@
-
-#presentacion {
-    height: 88vh;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 80px;
+:root {
+  /* el verde del ejemplo */
+  --bs--pink: #d0009c;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#D3A4A4;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold; 
+body {
+  background-color: #0d0d0d;
 }
 
-.navbar-brand{
-    color: aliceblue;
+/* Ajustes generales de sección */
+.hero {
+  padding-top: 6rem; /* si necesitas compensar un navbar oculto */
+  padding-bottom: 6rem;
+}
+.hero .btn-success {
+  padding: 0.75rem 1.75rem;
+  font-weight: 500;
+}
+.bg-dark {
+  background-color: #111 !important;
+}
+.card .text-secondary {
+  opacity: 0.8;
 }
 
-.navbar-nav {
-    margin-left: auto;
-    display: flex;
-} 
-
-.navbar .nav-link {
-    color: #ffffff !important; /* Fuerza el color blanco */
-    text-decoration:solid;
+/* Sombra suave como en el ejemplo */
+img.rounded-3.shadow-lg {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 
-.navbar .nav-link:hover {
-    text-shadow: 5px 5px 5px #ac268a; /* Sombra rosa claro sólida */
-}
-
-.navbar .nav-link {
-    position: relative; /* Necesario para el posicionamiento absoluto del pseudo-elemento */
-    padding: 5px 10px; /* Espacio adicional para el borde */
-    text-decoration: none;
-    color: #ffffff; /* Color de texto inicial */
-    transition: color 0.3s; /* Suaviza la transición del color */
-}
-
-.navbar .nav-link::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    background-color: #FFB6C1; /* Color rosa claro */
-    border-radius: 30%; /* Hace que sea un círculo */
-    transform: translate(-50%, -50%) scale(0); /* Inicialmente oculto */
-    z-index: -1; /* Detrás del texto */
-    transition: transform 0.3s; /* Suaviza la transición del tamaño */
-}
-
-.navbar .nav-link:hover::after {
-    transform: translate(-50%, -50%) scale(1); /* Muestra el círculo al pasar el ratón */
-}
-
-.proyecto {
-    background-image: url('google/google.png'); /* Ruta a tu imagen */
-    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
-    background-position: center; /* Centra la imagen */
-    color: white; /* Asegura que el texto sea legible sobre la imagen */
-}
-
-
-#proyecto-1 {
-    background-image: url('google/google.png');
-}
-
-#proyecto-2 {
-    background-image: url('interes/interes.png');
-}
-
-#proyecto-3 {
-    background-image: url('cenidet.png');
-}
-
-
-.text-shadow-1 {
-    text-shadow: 1px -1px 8px rgba(0, 0, 0, 1);
-}
-
-.inf{
-margin-top: 10vh;
-}
-
-
-.sarina-regular {
-    font-family: "Sarina", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* Añadir espaciado entre la imagen y el texto */
-.col-lg-6 {
-    padding: 0 50px;
-}
-
-/* Espacio alrededor del contenedor para evitar que el contenido toque los bordes */
-.container-fluid {
-    padding-left: 20px; /* Espacio izquierdo */
-    padding-right: 30px; /* Espacio derecho */
-}
-
-/* Opcional: Añadir espaciado específico entre la imagen y el texto */
-.col-lg-6 img {
-    margin-right: 20vh; /* Ajusta el espacio entre la imagen y el texto */
-}
-
-.perfil{
-    width: 10vh;
-    height: 10vh;
-    border-radius: 8px
-}
-
-.contactame{
-    background-color: #FFB6C1;
-}
-
-.custom-btn-1 {
-    background-color: #ff69b4; /* Color rosa brillante */
-    border-color: #ff69b4;
-    color: white;
-}
-
-.custom-btn-2 {
-    background-color: #ffb6c1; /* Color rosa claro */
-    border-color: #ffb6c1;
-    color: white;
-}
-
-.custom-btn-1:hover,
-.custom-btn-2:hover {
-    opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-    .custom-btn-1,
-    .custom-btn-2 {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
-.flip-card {
-    background-color: transparent;
-    width: 400px;
-    height: 300px;
-    perspective: 1000px;
-    margin: auto;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.flip-card-back {
-    color: rgb(161, 74, 132);
-    transform: rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-    opacity: 0;
-    transition: opacity 0.6s;
-    cursor: pointer;
-}
-
-.flip-card-back:hover .overlay {
-    opacity: 1;
+/* Tipografía */
+h1, h2 {
+  line-height: 1.2;
 }
